@@ -1,6 +1,7 @@
 local M = {}
 
-function M.highlights(c)
+function M.highlights(c, opts)
+  opts = opts or {}
   local groups = {
     Normal = { fg = c.fg, bg = c.bg },
     NormalNC = { fg = c.fg, bg = c.bg },
@@ -206,6 +207,43 @@ function M.highlights(c)
 
   for group, spec in pairs(treesitter) do
     groups[group] = spec
+  end
+
+  if opts.transparent then
+    local transparent_groups = {
+      Normal = true,
+      NormalNC = true,
+      NormalFloat = true,
+      FloatBorder = true,
+      FloatTitle = true,
+      SignColumn = true,
+      FoldColumn = true,
+      Folded = true,
+      StatusLine = true,
+      StatusLineNC = true,
+      TabLine = true,
+      TabLineSel = true,
+      TabLineFill = true,
+      WildMenu = true,
+      Pmenu = true,
+      PmenuSel = true,
+      PmenuSbar = true,
+      PmenuThumb = true,
+      NvimTreeNormal = true,
+      NvimTreeNormalNC = true,
+      NvimTreeVertSplit = true,
+      TelescopeBorder = true,
+      TelescopePromptBorder = true,
+      TelescopeResultsBorder = true,
+      TelescopePreviewBorder = true,
+      Terminal = true,
+    }
+
+    for group in pairs(transparent_groups) do
+      if groups[group] then
+        groups[group].bg = "none"
+      end
+    end
   end
 
   return groups

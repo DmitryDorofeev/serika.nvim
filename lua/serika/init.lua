@@ -3,6 +3,12 @@ local theme = require("serika.theme")
 
 local M = {}
 
+local defaults = {
+  transparent = false,
+}
+
+local config = vim.deepcopy(defaults)
+
 local function apply_terminal_palette(colors)
   local term = colors.terminal or {}
 
@@ -24,7 +30,7 @@ local function apply_terminal_palette(colors)
   vim.g.terminal_color_15 = term.bright_white
 end
 
-function M.load()
+function M.load(opts)
   if vim.fn.has("termguicolors") == 1 then
     vim.o.termguicolors = true
   end
@@ -41,7 +47,8 @@ function M.load()
   vim.g.colors_name = "serika"
 
   local colors = palette
-  local highlights = theme.highlights(colors)
+  local resolved_opts = vim.tbl_deep_extend("force", {}, config, opts or {})
+  local highlights = theme.highlights(colors, resolved_opts)
 
   for group, spec in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, spec)
@@ -50,13 +57,17 @@ function M.load()
   apply_terminal_palette(colors)
 end
 
+function M.setup(opts)
+  config = vim.tbl_deep_extend("force", {}, defaults, opts or {})
+end
+
 function M.colors()
   return palette
 end
 
-function M.highlights()
-  return theme.highlights(palette)
+function M.highlights(opts)
+  local resolved = vim.tbl_deep_extend("force", {}, config, opts or {})
+  return theme.highlights(palette, resolved)
 end
 
 return M
-

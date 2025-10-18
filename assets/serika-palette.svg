@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="380" viewBox="0 0 960 380" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font-family: "Fira Sans", "Segoe UI", sans-serif; font-size: 28px; font-weight: 600; fill: #e1e4e8; }
+    .subtitle { font-family: "Fira Sans", "Segoe UI", sans-serif; font-size: 18px; fill: #d1d5da; }
+    .label { font-family: "Fira Code", "JetBrains Mono", monospace; font-size: 16px; fill: #e1e4e8; }
+    .swatch { rx: 14; ry: 14; }
+  </style>
+  <rect width="960" height="380" fill="#2c2e31"/>
+  <text x="60" y="70" class="title">serika.nvim palette</text>
+  <text x="60" y="100" class="subtitle">A warm, industrial twist on a dark grey canvas</text>
+
+  <g transform="translate(60 140)">
+    <rect class="swatch" x="0" y="0" width="140" height="180" fill="#323437"/>
+    <text class="label" x="20" y="140">bg</text>
+    <text class="label" x="20" y="165">#323437</text>
+  </g>
+
+  <g transform="translate(220 140)">
+    <rect class="swatch" x="0" y="0" width="140" height="180" fill="#FFCB00"/>
+    <text class="label" x="20" y="140">accent</text>
+    <text class="label" x="20" y="165">#FFCB00</text>
+  </g>
+
+  <g transform="translate(380 140)">
+    <rect class="swatch" x="0" y="0" width="140" height="180" fill="#737579"/>
+    <text class="label" x="20" y="140">comment</text>
+    <text class="label" x="20" y="165">#737579</text>
+  </g>
+
+  <g transform="translate(540 140)">
+    <rect class="swatch" x="0" y="0" width="140" height="180" fill="#82aaff"/>
+    <text class="label" x="20" y="140">blue</text>
+    <text class="label" x="20" y="165">#82AAFF</text>
+  </g>
+
+  <g transform="translate(700 140)">
+    <rect class="swatch" x="0" y="0" width="140" height="180" fill="#ea4a5a"/>
+    <text class="label" x="20" y="140">red</text>
+    <text class="label" x="20" y="165">#EA4A5A</text>
+  </g>
+</svg>
