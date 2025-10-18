@@ -1,0 +1,10 @@
+WRN 2025-10-17T22:16:23.278 ?.59750    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/3UB4By/nvim.59750.0
+WRN 2025-10-17T22:16:29.585 ?.59969    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/OxdPTh/nvim.59969.0
+WRN 2025-10-17T22:26:19.609 ?.91401    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/nkWCLB/nvim.91401.0
+WRN 2025-10-17T22:27:39.205 ?.93730    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/zyOqZR/nvim.93730.0
+WRN 2025-10-17T22:30:14.345 ?.99371    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/cohZmI/nvim.99371.0
+WRN 2025-10-17T22:30:52.318 ?.689      server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/Ryypof/nvim.689.0
+WRN 2025-10-17T22:31:54.067 ?.3071     server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/U9dDfJ/nvim.3071.0
+WRN 2025-10-17T22:40:34.295 ?.21414    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/ysxt5f/nvim.21414.0
+WRN 2025-10-17T22:40:43.524 ?.21753    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/w6oxB1/nvim.21753.0
+WRN 2025-10-17T22:43:57.397 ?.28327    server_start:193: Failed to start server: operation not permitted: /var/folders/nd/btcfd5d55wd6pmjt177rqj980000gn/T/nvim.dmitrydorofeev/2Qc9Gb/nvim.28327.0
